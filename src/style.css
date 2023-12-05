@@ -1,4 +1,18 @@
-/* 0zJbpExCfXIWKhKI */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(84, 84, 86, 0.496);
+  border-radius: 60px;
+}
+*::-webkit-scrollbar {
+  width: 7px;
+}
 
 * {
   margin: 0;
@@ -43,16 +57,22 @@
   }
 }
 
-main {
+.main {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 3fr;
   gap: 40px;
+  height: calc(100vh - 76px - 20px - 30px - 40px - 40px);
 }
 
 @media (max-width: 800px) {
   .main {
     grid-template-columns: 1fr;
   }
+}
+
+section {
+  overflow: scroll;
+  padding-bottom: 20px;
 }
 
 .hidden {
@@ -66,6 +86,12 @@ main {
   margin-top: 30px;
   font-weight: 600;
   font-family: "Sono", sans-serif;
+}
+
+.disputed {
+  color: rgb(255, 97, 97);
+  font-weight: 600;
+  margin-right: 8px;
 }
 /* ELEMENTS */
 
@@ -82,7 +108,7 @@ main {
 body {
   background-color: #292524;
   color: whitesmoke;
-  padding: 40px 60px;
+  padding: 40px 60px 0px;
 }
 
 aside {
@@ -117,12 +143,38 @@ h1 {
   letter-spacing: -1px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .fact {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
     gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 24px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .fact-form {
+    padding: 16px;
+  }
+
+  .fact {
+    padding: 12px 16px;
   }
 }
 

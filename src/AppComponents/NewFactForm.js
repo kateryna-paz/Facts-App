@@ -15,7 +15,7 @@ const CATEGORIES = [
 
 export default function NewFactForm({ setFacts, setShowForm }) {
   const [text, setText] = useState("");
-  const [source, setSource] = useState("http://example.com");
+  const [source, setSource] = useState("");
   const [category, setCategory] = useState("");
   const [isUpLoading, setIsUpLoading] = useState(false);
   const textLength = text.length;
