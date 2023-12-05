@@ -1,0 +1,259 @@
+/* 0zJbpExCfXIWKhKI */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN LAYOUT */
+
+#root {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.fact-form {
+  background-color: rgba(75, 73, 73, 0.523);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-around;
+  font-family: "Sono", sans-serif;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 32px 48px;
+  }
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 40px;
+}
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-top: 30px;
+  font-weight: 600;
+  font-family: "Sono", sans-serif;
+}
+/* ELEMENTS */
+
+.logo {
+  display: flex;
+  gap: 20px;
+}
+
+.logo img {
+  width: 68px;
+  height: 68px;
+}
+
+body {
+  background-color: #292524;
+  color: whitesmoke;
+  padding: 40px 60px;
+}
+
+aside {
+  padding: 0 10px;
+}
+
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Coiny", sans-serif;
+  color: white;
+  margin-top: 9px;
+}
+
+.category {
+  margin-bottom: 10px;
+}
+
+.fact {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Sono", sans-serif;
+  background-color: rgba(97, 90, 86, 0.468);
+  border-radius: 20px;
+  border: 2px solid rgb(139, 139, 139);
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 1000px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 10px;
+  }
+}
+
+.fact-buttons {
+  margin-left: auto;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.fact-buttons button {
+  border: none;
+  background-color: rgb(90, 90, 90);
+  border: 1px solid transparent;
+  color: inherit;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.fact-buttons button:hover {
+  background-color: #413f3f;
+  border: 1px solid whitesmoke;
+  transform: rotate(5deg) translate(5px, 3%);
+}
+.fact-buttons button:disabled {
+  background-color: #292524;
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Coiny", sans-serif;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  font-family: "Coiny", sans-serif;
+  border-radius: 18px;
+  border: none;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 17px;
+  cursor: pointer;
+  color: inherit;
+  padding: 13px;
+  background-image: linear-gradient(
+    45deg,
+    rgb(155, 172, 23),
+    rgb(35, 161, 90),
+    rgb(35, 102, 161),
+    rgb(108, 18, 136),
+    rgb(179, 0, 63)
+  );
+  transition: 0.4s;
+}
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+
+.btn-large {
+  font-size: 24px;
+  padding: 20px 32px 17px;
+  margin-left: 10px;
+}
+
+.btn-all-ctegories {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
+}
+
+.source:link,
+.source:visited {
+  font-style: italic;
+  text-decoration: none;
+  color: antiquewhite;
+  margin-left: 12px;
+  transition: 0.5s;
+}
+
+.source:hover,
+.source:active,
+.source:focus {
+  color: rgb(178, 255, 180);
+}
+
+.fact-form input,
+.fact-form select {
+  background-color: #565656;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  color: inherit;
+  font-family: inherit;
+  border-radius: 30px;
+  width: 30%;
+}
+
+.fact-form input::placeholder {
+  color: #8d8d8d;
+}
+
+.fact-form span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 16px;
+}
+
+.fact-form input:first-child {
+  width: 100%;
+}
+
+.fact-form button {
+  font-size: 20px;
+}
+
+@media (maxwidth: 1000px) {
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
+}
