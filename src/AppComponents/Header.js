@@ -1,7 +1,7 @@
 import "../style.css";
 
 export default function Header({ showForm, setShowForm }) {
-  const appTitle = "Today I learnad";
+  const appTitle = "Today I learned";
   return (
     <>
       <header className="header">
